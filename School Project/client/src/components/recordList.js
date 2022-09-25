@@ -32,7 +32,7 @@ export default function RecordList() {
       const response = await fetch(`http://localhost:5000/record/`);
 
       if (!response.ok) {
-        const message = `An error occurred: ${response.statusText}`;
+        const message = `An error occurred FAIL: ${response.statusText}`;
         window.alert(message);
         return;
       }
