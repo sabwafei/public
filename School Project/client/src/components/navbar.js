@@ -15,7 +15,7 @@ export default function Navbar() {
           <p>CEN4031 Titan Help Project</p>
         </NavLink>
         <NavLink className="nav-link" to="/create">
-          <button type="button" className="btn btn-primary pt5">
+          <button type="button" className="btn btn-primary">
             Create Ticket
           </button>
         </NavLink>

@@ -4,8 +4,8 @@ import { useNavigate } from "react-router";
 export default function Create() {
   const [form, setForm] = useState({
     name: "",
-    position: "",
-    level: "",
+    date: "",
+    problemDescription: "",
   });
   const navigate = useNavigate();
 
@@ -34,16 +34,16 @@ export default function Create() {
       return;
     });
 
-    setForm({ name: "", position: "", level: "" });
+    setForm({ name: "", date: "", problemDescription: "" });
     navigate("/");
   }
 
   // This following section will display the form that takes the input from the user.
   return (
-    <div>
-      <h3>Create New Record</h3>
+    <div className="d-flex flex-column">
+      <h3>Create New Ticket</h3>
       <form onSubmit={onSubmit}>
-        <div className="form-group">
+        <div className="form-group pt-2 pb-2">
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -53,7 +53,7 @@ export default function Create() {
             onChange={(e) => updateForm({ name: e.target.value })}
           />
         </div>
-        <div className="form-group">
+        <div className="form-group pt-2 pb-2">
           <label htmlFor="date">Date</label>
           <input
             type="text"
@@ -63,13 +63,13 @@ export default function Create() {
             onChange={(e) => updateForm({ date: e.target.value })}
           />
         </div>
-        <div className="form-group">
+        <div className="form-group pt-2 pb-2">
           <label htmlFor="problemDescription">Problem Description</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control pt-2 pb-2"
             id="problem-description"
-            value={form.date}
+            value={form.problemDescription}
             onChange={(e) => updateForm({ problemDescription: e.target.value })}
           />
         </div>
