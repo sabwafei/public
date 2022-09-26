@@ -11,7 +11,7 @@ import Create from "./components/create";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <Navbar />
       <Routes>
         <Route exact path="/" element={<RecordList />} />
