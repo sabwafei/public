@@ -22,7 +22,6 @@ const Record = (props) => (
 export default function RecordList() {
   const [records, setRecords] = useState([]);
 
-  // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
       const response = await fetch(`http://localhost:5000/record/`);
@@ -42,7 +41,6 @@ export default function RecordList() {
     return;
   }, [records.length]);
 
-  // This method will delete a record
   async function deleteRecord(id) {
     await fetch(`http://localhost:5000/${id}`, {
       method: "DELETE",
@@ -52,7 +50,6 @@ export default function RecordList() {
     setRecords(newRecords);
   }
 
-  // This method will map out the records on the table
   function recordList() {
     return records.map((record) => {
       return (
@@ -65,7 +62,6 @@ export default function RecordList() {
     });
   }
 
-  // This following section will display the table with the records of individuals.
   return (
     <div>
       <h3>Ticket List</h3>
