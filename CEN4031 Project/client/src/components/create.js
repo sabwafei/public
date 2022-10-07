@@ -60,7 +60,7 @@ export default function Create() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="date">Description</label>
+          <label htmlFor="Description">Description</label>
           <input
             type="text"
             className="form-control"
