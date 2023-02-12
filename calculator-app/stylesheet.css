@@ -151,11 +151,10 @@ nav {
   justify-content: space-between;
   align-content: center;
   padding: 0.8rem;
-  max-width: 900px;
   position: relative;
 }
-.nav__links {
-  /* display: none; */
+.nav__links-mobile {
+  display: none;
   position: absolute;
   top: 50px;
   right: 0;
@@ -190,4 +189,25 @@ footer {
   border-top: solid 1px black;
   position: fixed;
   bottom: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .nav__mobile {
+    display: none;
+  }
+  .nav__dsktop {
+    margin: auto;
+    max-width: 900px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-transform: capitalize;
+  }
 }
