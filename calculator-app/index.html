@@ -20,7 +20,7 @@
       <nav>
         <div class="nav__mobile">
           <a href="#"><img src="/images/sabwafei-logo2.png" alt="my logo" /></a>
-          <div class="nav__toggle" id="toggle-nav-open">
+          <div class="nav__toggle" id="nav-toggle" data-state="closed">
             <img
               src="/images/hamburger.png"
               alt="toggle-button-active"
@@ -28,15 +28,8 @@
               width="24px"
             />
           </div>
-          <div class="nav__toggle" id="toggle-nav-close">
-            <img
-              src="/images/cross.png"
-              alt="toggle-button-active"
-              height="24px"
-              width="24px"
-            />
-          </div>
-          <ul class="nav__links">
+
+          <ul class="nav__links-mobile" id="mobile-links">
             <li class="nav__link-item-mobile"><a href="#">view code</a></li>
             <li class="nav__link-item-mobile"><a href="#">Readme</a></li>
             <li class="nav__link-item-mobile">
@@ -45,6 +38,7 @@
             <li class="nav__link-item-mobile"><a href="#">contact</a></li>
           </ul>
         </div>
+
         <div class="nav__dsktop">
           <div class="nav__logo">
             <a href="#"
@@ -67,6 +61,6 @@
       <p class="footer__attribution">Created by</p>
       <a href="#">sabwafei</a>
     </footer>
-    <script src="/script.js"></script>
+    <script src="/script.js" async></script>
   </body>
 </html>
