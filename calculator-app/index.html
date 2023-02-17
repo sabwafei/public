@@ -30,12 +30,18 @@
           </div>
 
           <ul class="nav__links nav__links--mobile" id="mobile-links">
-            <li class="nav__link-item"><a href="#">view code</a></li>
-            <li class="nav__link-item"><a href="#">Readme</a></li>
             <li class="nav__link-item">
-              <a href="#">other projects</a>
+              <a href="#" target="_blank">view code</a>
             </li>
-            <li class="nav__link-item"><a href="#">contact</a></li>
+            <li class="nav__link-item">
+              <a href="#" target="_blank">Readme</a>
+            </li>
+            <li class="nav__link-item">
+              <a href="#" target="_blank">other projects</a>
+            </li>
+            <li class="nav__link-item">
+              <a href="#" target="_blank">contact</a>
+            </li>
           </ul>
         </div>
 
@@ -55,8 +61,81 @@
       </nav>
     </header>
     <div class="content" id="content">
+      <h1 class="content__title">calculator</h1>
       <div class="blocker" id="blocker"></div>
-      <button>hello</button>
+      <div class="calculator">
+        <input type="number" name="" id="" class="calculator__output" />
+
+        <div class="calculator__controls">
+          <button class="calculator__button calculator__button--modifier">
+            %
+          </button>
+          <button
+            class="calculator__button calculator__button--clr calculator__button--emph"
+          >
+            CE
+          </button>
+          <button
+            class="calculator__button calculator__button--clr calculator__button--emph"
+          >
+            C
+          </button>
+          <button
+            class="calculator__button calculator__button--delete calculator__button--emph"
+          >
+            del
+          </button>
+          <button class="calculator__button calculator__button--modifier">
+            1/x
+          </button>
+          <button class="calculator__button calculator__button--modifier">
+            x&#xB2;
+          </button>
+          <button class="calculator__button calculator__button--modifier">
+            &radic;
+          </button>
+          <button
+            class="calculator__button calculator__button--operator calculator__button--emph"
+          >
+            &#247;
+          </button>
+          <button class="calculator__button">7</button>
+          <button class="calculator__button">8</button>
+          <button class="calculator__button">9</button>
+          <button
+            class="calculator__button calculator__button--operator calculator__button--emph"
+          >
+            x
+          </button>
+          <button class="calculator__button">4</button>
+          <button class="calculator__button">5</button>
+          <button class="calculator__button">6</button>
+          <button
+            class="calculator__button calculator__button--operator calculator__button--emph"
+          >
+            -
+          </button>
+          <button class="calculator__button">1</button>
+          <button class="calculator__button">2</button>
+          <button class="calculator__button">3</button>
+          <button
+            class="calculator__button calculator__button--operator calculator__button--emph"
+          >
+            +
+          </button>
+          <button class="calculator__button calculator__button--modifier">
+            &#xb1;
+          </button>
+          <button class="calculator__button">0</button>
+          <button class="calculator__button">.</button>
+          <button
+            class="calculator__button calculator__button--equal calculator__button--emph"
+          >
+            =
+          </button>
+        </div>
+        <p class="calculator__log"></p>
+      </div>
     </div>
     <footer class="footer">
       <p class="footer__attribution">Created by</p>

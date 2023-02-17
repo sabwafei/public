@@ -38,6 +38,4 @@
       navBlocker.style.display = "none";
     }
   });
-
-  //functions
 })();
