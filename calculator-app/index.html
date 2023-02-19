@@ -64,77 +64,102 @@
       <h1 class="content__title">calculator</h1>
       <div class="blocker" id="blocker"></div>
       <div class="calculator">
-        <input type="number" name="" id="" class="calculator__output" />
+        <input type="text" name="" id="calcOutput" class="calculator__output" />
 
-        <div class="calculator__controls">
-          <button class="calculator__button calculator__button--modifier">
+        <div class="calculator__controls" id="calculator-controls">
+          <button
+            class="calculator__button calculator__button--modifier"
+            data-func="percent"
+          >
             %
           </button>
           <button
             class="calculator__button calculator__button--clr calculator__button--emph"
+            data-func="clearEntry"
           >
             CE
           </button>
           <button
             class="calculator__button calculator__button--clr calculator__button--emph"
+            data-func="clearAll"
+            id="clearAll"
           >
             C
           </button>
           <button
             class="calculator__button calculator__button--delete calculator__button--emph"
+            data-func="delete"
+            id="delete"
           >
             del
           </button>
-          <button class="calculator__button calculator__button--modifier">
+          <button
+            class="calculator__button calculator__button--modifier"
+            data-func="multiInverse"
+          >
             1/x
           </button>
-          <button class="calculator__button calculator__button--modifier">
+          <button
+            class="calculator__button calculator__button--modifier"
+            data-func="squared"
+          >
             x&#xB2;
           </button>
-          <button class="calculator__button calculator__button--modifier">
+          <button
+            class="calculator__button calculator__button--modifier"
+            data-func="sqRoot"
+          >
             &radic;
           </button>
           <button
             class="calculator__button calculator__button--operator calculator__button--emph"
+            data-func="divide"
           >
             &#247;
           </button>
-          <button class="calculator__button">7</button>
-          <button class="calculator__button">8</button>
-          <button class="calculator__button">9</button>
+          <button class="calculator__button" data-func="num">7</button>
+          <button class="calculator__button" data-func="num">8</button>
+          <button class="calculator__button" data-func="num">9</button>
           <button
             class="calculator__button calculator__button--operator calculator__button--emph"
+            data-func="multiply"
           >
             x
           </button>
-          <button class="calculator__button">4</button>
-          <button class="calculator__button">5</button>
-          <button class="calculator__button">6</button>
+          <button class="calculator__button" data-func="num">4</button>
+          <button class="calculator__button" data-func="num">5</button>
+          <button class="calculator__button" data-func="num">6</button>
           <button
             class="calculator__button calculator__button--operator calculator__button--emph"
+            data-func="subtract"
           >
             -
           </button>
-          <button class="calculator__button">1</button>
-          <button class="calculator__button">2</button>
-          <button class="calculator__button">3</button>
+          <button class="calculator__button" data-func="num">1</button>
+          <button class="calculator__button" data-func="num">2</button>
+          <button class="calculator__button" data-func="num">3</button>
           <button
             class="calculator__button calculator__button--operator calculator__button--emph"
+            data-func="add"
           >
             +
           </button>
-          <button class="calculator__button calculator__button--modifier">
+          <button
+            class="calculator__button calculator__button--modifier"
+            data-func="posNeg"
+          >
             &#xb1;
           </button>
-          <button class="calculator__button">0</button>
-          <button class="calculator__button">.</button>
+          <button class="calculator__button" data-func="num">0</button>
+          <button class="calculator__button" data-func="num">.</button>
           <button
             class="calculator__button calculator__button--equal calculator__button--emph"
+            data-func="equal"
           >
             =
           </button>
         </div>
-        <p class="calculator__log"></p>
+        <p class="calculator__log" id="calculatorLog"></p>
       </div>
     </div>
     <footer class="footer">
